@@ -7,7 +7,7 @@ var sequelize= new Sequelize(null,null,null,{dialect:'sqlite',storage:'quiz.sqli
 var Quiz=sequelize.import(path.join(__dirname,'quiz'));
 
 exports.Quiz=Quiz;
-
+//archivo editado
 sequelize.sync().success(function(){
 	Quiz.count().success(function(count){
 	if(count===0){
